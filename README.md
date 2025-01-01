@@ -40,4 +40,4 @@ To run the project after cloning the repository:
     ### >npm start 
 Your project should now be running and accessible in the browser.
 
-### Don't forget to change url on your browser from http://localhost:3000 to http://localhost:3000/techventure
+### Don't forget to change url in your browser from http://localhost:3000 to http://localhost:3000/techventure
