@@ -1,7 +1,12 @@
 import React from 'react';
 import FlipCardStyle from '../styles/FlipCard.module.css';
+import { Link } from 'react-router-dom';
 
-function FlipCard({ image, name, description }) {
+function FlipCard({ id, image, name, description }) {
+  // const navigate = useNavigate();
+  // const goToEvent = () => {
+  //   navigate('/techventure/event')
+  // }
   return (
     <div className={FlipCardStyle.card}>
         <div className={FlipCardStyle.cardInner}>
@@ -12,7 +17,9 @@ function FlipCard({ image, name, description }) {
 
         <div className={FlipCardStyle.cardBack}>
             <div className={FlipCardStyle.cardDescription}>{description}</div>
-            <button>Explore</button>
+            <Link to={`/techventure/event/${id}`}>
+              <button>Explore</button>
+            </Link>
         </div>
         </div>
     </div>

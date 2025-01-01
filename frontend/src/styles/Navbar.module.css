@@ -4,13 +4,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 1rem;
-    background-color: transparent; 
+    padding-block: 0.5rem;
+    /* background-color: rgba(9, 244, 253, 0.1);  */
     color: #09f4fd;
     position: absolute; 
     width: 100%;
     top: 0;
     z-index: 1000;
+    backdrop-filter: blur(30px);
+
   }
   
   .logo {
@@ -83,7 +85,7 @@
 
   .navContainer i{
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: none;
 
     @media(max-width: 550px){

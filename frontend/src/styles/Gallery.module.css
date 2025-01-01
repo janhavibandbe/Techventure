@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
 .gallery{
-    padding-top: 1rem;
+  font-family: "Bruno Ace", serif;
+    background-color: #1d1e1d;
+    padding-top: 5rem;
     padding-bottom: 3rem;
     padding-inline: 10rem;
     @media (max-width: 1400px){
@@ -20,13 +23,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 2rem;
-    width: 100%;
-    /* border-bottom: 0.2rem solid #f06c40; */
+    /* padding-top: 5rem; */
+    padding-bottom: 2rem;
     font-size: 2rem;
     font-weight: 700;
-    color: #333;
-    /* border-bottom: 3px solid #e67e22; */
+    color: #09f4fd;
     @media (max-width: 768px){
       font-size: 1.7rem;
     }
@@ -35,162 +36,63 @@
     }
 }
 
-.photoGallery{
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-width: 33%;
-    -moz-column-width: 33%;
-    column-width: 33%;
-    padding: 0 12px;
-    margin-bottom: 2rem;
-
-    @media (max-width: 768px) {
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2;
-    }
-}
-
-.pics{
-    -webkit-transition: all 350ms ease;
-    transition: all 350ms ease;
-    cursor: pointer;
-    margin-bottom: 12px;
-}
-.front {
+.cards {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* .pics:hover{
-    filter: opacity(0.8);
-} */
-
-.imgModel{
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out;
-    visibility: hidden;
-    opacity: 0;
-    transform: scale(0);
-    overflow: hidden;
-    z-index: 999;
-}
-.imgModel.open{
-    visibility: visible;
-    opacity: 1;
-    transform: scale(1);
-}
-.imgModel img{
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    max-height: 100%;
-    min-height: 30rem;
-    display: block;
-    line-height: 0;
-    box-sizing: border-box;
-    padding: 20px 0 20px;
-    margin: 0 auto;
-    @media (max-width: 768px) {
-      min-height: 20rem;
-    } 
-    @media (max-width: 425px) {
-      min-height: 7rem;
-    }
-}
-.imgModel.open i{
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 2rem;
-    height: 2rem;
-    padding: 5px;
-    font-size: 1.5rem;
-    color: #fff;
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-.photoGallery {
-  display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
-/* Style for each flip card */
-.flipCard {
-  width: 200px;
-  height: 300px;
+.card {
+  width: 500px;
+  height: 400px;
   perspective: 1000px;
+  cursor: pointer;
 }
 
-/* The card container with both front and back sides */
-.flipCardInner {
+.cardInner {
   position: relative;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d; /* Ensures that both sides of the card are shown */
-  transition: transform 0.6s; /* Smooth transition for flip effect */
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
 
-/* Flip effect when hovering over the card */
-/* .flipCard:hover .flipCardInner {
-  transform: rotateY(180deg);
-} */
-
-.flipCard.flipped .flipCardInner {
+.card:hover .cardInner {
   transform: rotateY(180deg);
 }
 
-
-/* Style for the front side of the card */
-.flipCardFront,
-.flipCardBack {
+.cardFront,
+.cardBack {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Hides the back side when flipped */
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-/* Front side: display the image */
-.flipCardFront img {
+.cardFront img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Back side: display the image name and description */
-.flipCardBack {
-  background-color: #333;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+.cardBack {
+  background-color: #f8f8f8;
   transform: rotateY(180deg);
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-.flipCardBack h2 {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-.flipCardBack p {
-  font-size: 0.9rem;
+@media (max-width: 600px) {
+  .card {
+    width: 150px;
+    height: 200px;
+  }
 }

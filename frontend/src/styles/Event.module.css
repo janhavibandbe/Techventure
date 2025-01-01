@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Orbitron:wght@400..900&display=swap');
+
+.eventPage{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #222929;
+}
+
+.eventBanner{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    width: 100%;
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat !important; /* Prevent the image from repeating */
+    background-position: center !important; /* Center the image in the div */
+    background-size: cover !important; /* Ensure the image covers the entire background */
+    @media(max-width: 768px){
+        padding-bottom: 5rem;
+    }
+    @media(max-width: 550px){
+        padding-bottom: 4rem;
+    }
+}
+
+.eventBannerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #d5edee;
+    font-family: "Bruno Ace", serif;
+}
+
+.eventBannerContent .eventDate, .venue{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    @media (max-width: 1024px) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: 550px) {
+        font-size: 1.2rem;
+    }
+}
+
+.eventBannerContent .eventName{
+    padding-block: 3rem;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0 0 5px #09f4fd, 0 0 10px #09f4fd, 0 0 20px #09f4fd;
+    transition: 0.3s ease-in-out;
+    @media (max-width: 1024px) {
+        font-size: 3.5rem;
+    }
+    @media (max-width: 650px) {
+        font-size: 3rem;
+    }
+    @media (max-width: 550px) {
+        font-size: 2.3rem;
+    }
+}
+
+.eventBannerContent .eventName:hover{
+    text-shadow: 0 0 5px #09f4fd, 0 0 10px #09f4fd, 0 0 20px #09f4fd, 0 0 30px #09f4fd;
+}
+
+
+
+
+
+.countdownSection{
+    margin-top: -5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    @media(max-width: 768px){
+        margin-top: -4rem;
+    }
+    @media(max-width: 550px){
+        margin-top: -3rem;
+    }
+}
+
+
+
+
+.eventDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sectionTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #09f4fd;
+    font-family: "Bruno Ace", serif;
+    text-align: center;
+    @media (max-width: 1024px) {
+        font-size: 2.8rem;
+    }
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
+    @media (max-width: 550px) {
+        font-size: 2.3rem;
+    }
+}
+
+.eventDescription .eventInfo{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #d5edee;
+    font-family: "Bruno Ace", serif;
+    line-height: 2.2rem;
+    /* text-align: center; */
+    padding-inline: 8rem;
+    @media (max-width: 1024px) {
+        font-size: 1.2rem;
+    }
+    @media (max-width: 768px) {
+        line-height: 2rem;
+        padding-inline: 4rem;
+    }
+    @media (max-width: 550px) {
+        font-size: 1rem;
+        line-height: 1.7rem;
+        padding-inline: 2.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.prices {
+    margin-top: 2rem;
+    color: #d5edee;
+    text-align: center;
+    gap: 1rem;
+  }
+
+.priceOptions{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    @media (max-width: 600px) {
+        gap: 1rem;
+    }
+}
+
+.priceOption{
+    text-align: center;
+    width: 15rem;
+    transition: 0.5s ease-in-out;
+    @media (max-width: 900px) {
+        width: 10rem;
+    }
+    @media (max-width: 600px) {
+        width: 7rem;
+    }
+}
+
+.priceOption:hover {
+    transform: scale(1.1);
+}
+
+.priceOption img{
+    height: 10rem;
+    @media (max-width: 900px) {
+        height: 7rem;
+    }
+    @media (max-width: 900px) {
+        height: 5rem;
+    }
+}
+
+.priceOption .firstPrice{
+    height: 13rem;
+    @media (max-width: 900px) {
+        height: 10rem;
+    }
+    @media (max-width: 600px) {
+        height: 7rem;
+    }
+}
+
+.pricelabel{
+    font-size: 1.5rem;
+    color: #d5edee;
+    @media (max-width: 900px) {
+        font-size: 1rem;
+    }
+}
+
+.priceValue {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #d5edee;
+    @media (max-width: 900px) {
+        font-size: 2rem;
+    }
+    @media (max-width: 600px) {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+
+
+.registerButtonContainer{
+    text-align: center;
+    padding-block: 3rem;
+}
+
+.registerButtonContainer button{
+    text-align: center;
+    height: 2.5rem;
+    width: 10rem;
+    background-color: #09f4fd;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1rem;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.registerButtonContainer button:hover {
+    transform: scale(1.1);
+  }
