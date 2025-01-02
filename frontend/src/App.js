@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Gallery from './pages/Gallery';
 import Event from './pages/Event';
+import Faq from './pages/Faq';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -16,6 +17,7 @@ function App() {
       <Route exact path='/techventure/about' element={<About/>}/>
       <Route exact path='/techventure/event/:id' element={<Event/>}/>
       <Route exact path='/techventure/gallery' element={<Gallery/>}/>
+      <Route exact path='/techventure/faq' element={<Faq />} /> 
     </Routes>
 
     <Footer/>

@@ -19,6 +19,10 @@ function Navbar() {
     navigate('/techventure/gallery');
   };
 
+  const gotToFAQ = () =>{
+    navigate('/techventure/faq');
+  };
+
   const toggleMenu = () =>{
     if(window.innerWidth < 550){
       setIsMenuOpen(!isMenuOpen);
@@ -35,6 +39,7 @@ function Navbar() {
           <div className={NavStyles.home} onClick={goToHome}>Home</div>
           <div className={NavStyles.about} onClick={goToAbout}>About</div>
           <div className={NavStyles.gallery} onClick={gotToGallery}>Gallery</div>
+          <div className={NavStyles.faq} onClick={gotToFAQ}>FAQs</div>
         </div>
 
         <i className="fa-solid fa-bars" onClick={toggleMenu}></i>
