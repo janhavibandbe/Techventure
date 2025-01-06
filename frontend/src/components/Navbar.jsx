@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import NavStyles from '../styles/Navbar.module.css';
 import { useNavigate } from 'react-router-dom';
 
+import acsesLogo from '../assets/acsesLogo.png';
+
 function Navbar() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(window.innerWidth>550? true : false);
@@ -32,7 +34,8 @@ function Navbar() {
   return (
       <div className={NavStyles.navContainer}>
         <div className={NavStyles.logo} onClick={goToHome}>
-          TechVenture
+          <img src={acsesLogo} alt="Logo" className={NavStyles.logoImg} />
+          ACSES
         </div>
 
         <div className={`${NavStyles.navOptions} ${isMenuOpen ? NavStyles.open : NavStyles.closed}`}>

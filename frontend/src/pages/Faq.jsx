@@ -37,31 +37,31 @@ const FAQ = () => {
         margin: "0 auto",
         padding: "20px",
         paddingTop: "5rem",
-        fontFamily: "'Roboto', sans-serif",
+        fontFamily: "'Bruno Ace', serif",
         backgroundColor: "#1a1a2e",
         color: "#fff",
-        // borderRadius: "10px",
-        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.3)",
+        minHeight: "35rem"
       }}
     >
       <h2
         style={{
-          color: "#00d4ff",
+          color: "#09f4fd",
           textAlign: "center",
           marginBottom: "20px",
-          borderBottom: "2px solid #00d4ff",
+          fontSize: "2rem",
           paddingBottom: "10px",
+          
         }}
       >
         Frequently Asked Questions
       </h2>
-      <div style={{ marginTop: "20px" }}>
+      <div style={{ marginTop: "20px"}}>
         {faqs.map((faq, index) => (
           <div
             key={index}
             style={{
               marginBottom: "15px",
-              border: "1px solid #00d4ff",
+              border: "1px solid #09f4fd",
               borderRadius: "8px",
               overflow: "hidden",
               backgroundColor: "#16213e",
@@ -80,7 +80,7 @@ const FAQ = () => {
                 padding: "15px",
                 cursor: "pointer",
                 fontWeight: "bold",
-                borderBottom: activeIndex === index ? "none" : "1px solid #00d4ff",
+                borderBottom: activeIndex === index ? "none" : "1px solid #09f4fd",
                 transition: "background-color 0.3s ease, color 0.3s ease",
               }}
               onClick={() => toggleFAQ(index)}
@@ -92,8 +92,8 @@ const FAQ = () => {
                 style={{
                   padding: "15px",
                   backgroundColor: "#1a1a2e",
-                  color: "#00d4ff",
-                  borderTop: "1px solid #00d4ff",
+                  color: "#09f4fd",
+                  borderTop: "1px solid #09f4fd",
                 }}
               >
                 {faq.answer}

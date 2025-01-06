@@ -3,10 +3,6 @@ import FlipCardStyle from '../styles/FlipCard.module.css';
 import { Link } from 'react-router-dom';
 
 function FlipCard({ id, image, name, description }) {
-  // const navigate = useNavigate();
-  // const goToEvent = () => {
-  //   navigate('/techventure/event')
-  // }
   return (
     <div className={FlipCardStyle.card}>
         <div className={FlipCardStyle.cardInner}>

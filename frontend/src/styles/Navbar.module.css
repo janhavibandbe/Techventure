@@ -4,24 +4,39 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block: 0.5rem;
-    /* background-color: rgba(9, 244, 253, 0.1);  */
     color: #09f4fd;
     position: absolute; 
     width: 100%;
     top: 0;
     z-index: 1000;
     backdrop-filter: blur(30px);
-
+    border-bottom: 1px solid #09f5fd49;
+    font-family: "Bruno Ace", serif;
   }
   
   .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2.5rem;
     font-weight: bold;
     cursor: pointer;
     padding-left: 3rem;
-    @media(max-width: 650px){
-      font-size: 2rem;
+    gap: 1rem;
+    @media(max-width: 768px){
+      font-size: 1.5rem;
+      gap: 0.5rem;
+    }
+  }
+
+  .logoImg {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    width: 5rem;
+    @media(max-width: 768px){
+      height: 4rem;
+      width: 4rem;
     }
   }
   
@@ -30,7 +45,9 @@
     gap: 20px;
     padding-right: 3rem;
     transition: transform 0.3s ease-in-out;
-
+    @media(max-width: 590px){
+      gap: 5px;
+    }
     @media(max-width: 550px){
       display: inline-block;
       position: absolute;
@@ -56,13 +73,17 @@
   
   .navOptions div {
     position: relative;
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: pointer;
     padding: 8px 12px;
     border-radius: 4px;
     transition: 0.3s ease-in-out;
-    @media(max-width: 650px){
-      font-size: 1.1rem;
+    @media(max-width: 685px){
+      font-size: 0.8rem;
+      padding: 8px 7px;
+    }
+    @media(max-width: 550px){
+      font-size: 1rem;
       padding: 8px 7px;
     }
   }

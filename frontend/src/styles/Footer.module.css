@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+.footer {
+    background-color: black;
+    color: #09f4fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: "Bruno Ace", serif;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .footerLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+  }
+
+  .footerLogo {
+    height: 3rem;
+    width: 3rem;
+  }
+  
+  .footerRight .footerIcon {
+    color: #09f4fd;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footerRight .footerIcon:hover {
+    color: #00d4ff;
+    transform: scale(1.1);
+  }
+  
