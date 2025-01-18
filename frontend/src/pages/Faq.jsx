@@ -40,7 +40,7 @@ const FAQ = () => {
         fontFamily: "'Bruno Ace', serif",
         backgroundColor: "#1a1a2e",
         color: "#fff",
-        minHeight: "35rem"
+        minHeight: "80vh"
       }}
     >
       <h2

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
 
 .aboutUsPage {
-    padding-block: 5rem;
+    padding-block: 6rem;
     padding-inline: 2rem;
     background: linear-gradient(#1d1e1dd1, #1d1e1dd1), url("../assets/binaryRain.jpg");
     background-size: cover;

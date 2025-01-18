@@ -20,7 +20,15 @@ function Event() {
           image: Image1,
           name: 'Tech Conference 2024',
           date: '15 Feb 2025',
-          description: 'Join the most innovative tech conference this year with top speakers from around the world. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore corrupti commodi quidem voluptatibus dolorem at consequuntur debitis quia adipisci magni voluptatem consequatur, beatae provident non necessitatibus distinctio nesciunt! Sapiente, distinctio?',
+          description: `<p><span style="font-size:22px;"><strong>About:</strong></span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis!</p>
+                        <p><span style="font-size:22px;"><strong>Team Members:</strong></span> 2-3</p>
+                        <p><span style="font-size:22px;"><strong>Rules:</strong></span></p>
+                        <ol style="list-style-type:decimal;">
+                            <li>Lorem ipsum dolor sit amet. </li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, reprehenderit.</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing. </li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        </ol>`,
           location: 'EN 1/3',
           price1: '₹500',
           price2: '₹300',
@@ -32,7 +40,15 @@ function Event() {
           image: Image2,
           name: 'Music Festival',
           date: '16 Feb 2025',
-          description: 'A weekend of music, fun, and unforgettable performances from various artists. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore corrupti commodi quidem voluptatibus dolorem at consequuntur debitis quia adipisci magni voluptatem consequatur, beatae provident non necessitatibus distinctio nesciunt! Sapiente, distinctio?',
+          description: `<p><span style="font-size:22px;"><strong>About:</strong></span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis!</p>
+                        <p><span style="font-size:22px;"><strong>Team Members:</strong></span> 2-3</p>
+                        <p><span style="font-size:22px;"><strong>Rules:</strong></span></p>
+                        <ol style="list-style-type:decimal;">
+                            <li>Lorem ipsum dolor sit amet. </li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, reprehenderit.</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing. </li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        </ol>`,
           location: 'EN 1/3',
           price1: '₹500',
           price2: '₹300',
@@ -44,7 +60,15 @@ function Event() {
           image: Image3,
           name: 'Art Expo 2024',
           date: '17 Feb 2025',
-          description: 'Explore the world of art at the biggest expo showcasing modern and contemporary art. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore corrupti commodi quidem voluptatibus dolorem at consequuntur debitis quia adipisci magni voluptatem consequatur, beatae provident non necessitatibus distinctio nesciunt! Sapiente, distinctio?',
+          description: `<p><span style="font-size:22px;"><strong>About:</strong></span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis!</p>
+                        <p><span style="font-size:22px;"><strong>Team Members:</strong></span> 2-3</p>
+                        <p><span style="font-size:22px;"><strong>Rules:</strong></span></p>
+                        <ol style="list-style-type:decimal;">
+                            <li>Lorem ipsum dolor sit amet. </li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, reprehenderit.</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing. </li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        </ol>`,          
           location: 'EN 1/3',
           price1: '₹500',
           price2: '₹300',
@@ -56,7 +80,15 @@ function Event() {
           image: Image4,
           name: 'Art Expo 2024',
           date: '18 Feb 2025',
-          description: 'Explore the world of art at the biggest expo showcasing modern and contemporary art. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore corrupti commodi quidem voluptatibus dolorem at consequuntur debitis quia adipisci magni voluptatem consequatur, beatae provident non necessitatibus distinctio nesciunt! Sapiente, distinctio?',
+          description: `<p><span style="font-size:22px;"><strong>About:</strong></span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis!</p>
+                        <p><span style="font-size:22px;"><strong>Team Members:</strong></span> 2-3</p>
+                        <p><span style="font-size:22px;"><strong>Rules:</strong></span></p>
+                        <ol style="list-style-type:decimal;">
+                            <li>Lorem ipsum dolor sit amet. </li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, reprehenderit.</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing. </li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        </ol>`,
           location: 'EN 1/3',
           price1: '₹500',
           price2: '₹300',
@@ -102,14 +134,7 @@ function Event() {
       <div className={EventStyle.eventDescription}>
         <div className={EventStyle.sectionTitle}>Event Overview</div>
 
-        <div className={EventStyle.eventInfo}>
-          About: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis! <br /><br />
-          Team Members: 2-3 <br /><br />
-          Rules: <br />1. Lorem ipsum dolor sit amet. <br />
-          2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, reprehenderit. <br />
-          3. Lorem, ipsum dolor sit amet consectetur adipisicing. <br />
-          4. Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
-        </div>
+        <div className={EventStyle.eventInfo} dangerouslySetInnerHTML={{ __html: event.description }} ></div>
       </div>
 
 

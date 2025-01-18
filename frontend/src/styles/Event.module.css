@@ -117,8 +117,8 @@
 }
 
 .eventDescription .eventInfo{
-    font-size: 1.5rem;
-    font-weight: 500;
+    /* font-size: 1.5rem;
+    font-weight: 500; */
     color: #d5edee;
     font-family: "Bruno Ace", serif;
     line-height: 2.2rem;

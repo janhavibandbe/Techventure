@@ -1,7 +1,25 @@
 import React, {useState, useEffect} from 'react';
 import CountdownStyle from '../styles/Countdown.module.css';
+import { motion } from 'framer-motion';
 
 function Countdown({eventTime}) {
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.8, ease: 'easeOut', staggerChildren: 0.2 }
+    }
+  };
+
+  const fadeLeft = {
+    hidden: { opacity: 0, x: -30 },
+    visible: {
+      opacity: 1, 
+      x: 0,
+      transition: { duration: 0.8, ease: 'easeOut', staggerChildren: 0.2 }
+    }
+  };
 
      const calculateTimeLeft = () => {
         const eventDate = new Date(eventTime); // Set your event date here
@@ -55,7 +73,12 @@ function Countdown({eventTime}) {
 
 
   return (
-    <div className={CountdownStyle.countdownContainer}>
+    <motion.div 
+      className={CountdownStyle.countdownContainer}
+      variants={window.innerWidth>470 ? fadeLeft : fadeUp}
+      initial="hidden"
+      whileInView="visible"
+      >
         <div className={CountdownStyle.countdown}>
           {Object.keys(timeLeft).map((interval, index) => (
               <div key={index} className={CountdownStyle.timeBlock}>
@@ -71,7 +94,7 @@ function Countdown({eventTime}) {
       ):(
         <div></div>
       )}
-    </div>
+    </motion.div>
   )
 }
 

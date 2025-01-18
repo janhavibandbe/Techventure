@@ -2,7 +2,7 @@
 .gallery{
     font-family: "Bruno Ace", serif;
     background-color: #1d1e1d;
-    padding-top: 5rem;
+    padding-top: 6rem;
     padding-bottom: 3rem;
     padding-inline: 10rem;
     @media (max-width: 1400px){
