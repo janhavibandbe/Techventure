@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import HomeStyle from '../styles/Home.module.css';
 import { motion } from 'framer-motion';
 import FlipCard from "../components/FlipCard";
@@ -17,34 +17,34 @@ function Home() {
     hidden: { opacity: 0},
     visible: {
       opacity: 1, 
-      transition: { duration: 0.8, ease: 'easeOut', staggerChildren: 0.2 }
+      transition: { duration: 1, ease: 'easeOut', staggerChildren: 0.2 }
     }
   };
 
   const fadeUp = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1, 
       y: 0,
-      transition: { duration: 0.8, ease: 'easeOut', staggerChildren: 0.2 }
+      transition: { duration: 1, ease: 'easeOut', staggerChildren: 0.2 }
     }
   };
 
   const fadeLeft = {
-    hidden: { opacity: 0, x: -30 },
+    hidden: { opacity: 0, x: -20 },
     visible: {
       opacity: 1, 
       x: 0,
-      transition: { duration: 0.8, ease: 'easeOut', staggerChildren: 0.2 }
+      transition: { duration: 1, ease: 'easeOut', staggerChildren: 0.2 }
     }
   };
 
   const fadeRight = {
-    hidden: { opacity: 0, x: 30 },
+    hidden: { opacity: 0, x: 20 },
     visible: {
       opacity: 1, 
       x: 0,
-      transition: { duration: 0.8, ease: 'easeOut', staggerChildren: 0.2 }
+      transition: { duration: 1, ease: 'easeOut', staggerChildren: 0.2 }
     }
   };
 
@@ -79,25 +79,25 @@ function Home() {
 
   const nonTechEvents = [
     {
-      id: 1,
+      id: 5,
       image: Image1,
       name: 'Tech Conference 2024',
       description: 'Join the most innovative tech conference this year with top speakers from around the world.'
     },
     {
-      id: 2,
+      id: 6,
       image: Image2,
       name: 'Music Festival',
       description: 'A weekend of music, fun, and unforgettable performances from various artists.'
     },
     {
-      id: 3,
+      id: 7,
       image: Image3,
       name: 'Art Expo 2024',
       description: 'Explore the world of art at the biggest expo showcasing modern and contemporary art.'
     },
     {
-      id: 4,
+      id: 8,
       image: Image4,
       name: 'Art Expo 2024',
       description: 'Explore the world of art at the biggest expo showcasing modern and contemporary art.'
@@ -182,24 +182,38 @@ function Home() {
       </motion.div>
       
 
-      {/*********************** Event Section ***********************/}
-      <div className={HomeStyle.events}>
-        <div className={HomeStyle.sectionTitle}>Technical Events</div>
-        <div className={HomeStyle.cardContainer}>
-          {techEvents.map((event, index) => (
-            <FlipCard key={index} {...event} />
-          ))}
-        </div>
-      </div>
+      <div className={HomeStyle.eventOuterContainer}>
+        {/*********************** Technical Event Section ***********************/}
+        <motion.div 
+          className={HomeStyle.events}
+          variants={window.innerWidth>470 ? fadeLeft : fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          >
+          <div className={HomeStyle.sectionTitle}>Technical Events</div>
+          <div className={HomeStyle.cardContainer}>
+            {techEvents.map((event, index) => (
+              <FlipCard key={index} {...event} />
+            ))}
+          </div>
+        </motion.div>
 
-      <div className={HomeStyle.events}>
-        <div className={HomeStyle.sectionTitle}>Non-Technical Events</div>
-        <div className={HomeStyle.cardContainer}>
-          {nonTechEvents.map((event, index) => (
-            <FlipCard key={index} {...event} />
-          ))}
-        </div>
+        {/*********************** Non-Technical Event Section ***********************/}
+        <motion.div 
+          className={HomeStyle.events}
+          variants={window.innerWidth>470 ? fadeRight : fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          >
+          <div className={HomeStyle.sectionTitle}>Non-Technical Events</div>
+          <div className={HomeStyle.cardContainer}>
+            {nonTechEvents.map((event, index) => (
+              <FlipCard key={index} {...event} />
+            ))}
+          </div>
+        </motion.div>
       </div>
+      
 
     </div>
     

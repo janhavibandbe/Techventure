@@ -1,6 +1,21 @@
 import React, { useState } from "react";
+import { motion } from 'framer-motion';
 
 const FAQ = () => {
+  const fadeUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 1, ease: 'easeOut', staggerChildren: 0.2 }
+    }
+  };
+
+  const childAnimation = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+  };
+
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
@@ -43,6 +58,7 @@ const FAQ = () => {
         minHeight: "80vh"
       }}
     >
+      {/*********************** Header ***********************/}
       <h2
         style={{
           color: "#09f4fd",
@@ -55,10 +71,15 @@ const FAQ = () => {
       >
         Frequently Asked Questions
       </h2>
-      <div style={{ marginTop: "20px"}}>
+      <motion.div 
+        style={{ marginTop: "20px"}}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+        >
         {faqs.map((faq, index) => (
-          <div
-            key={index}
+          <motion.div key={index} variants={childAnimation}
             style={{
               marginBottom: "15px",
               border: "1px solid #09f4fd",
@@ -73,6 +94,8 @@ const FAQ = () => {
                   : "0 2px 5px rgba(0, 0, 0, 0.2)",
             }}
           >
+
+            {/*********************** Questions ***********************/}
             <div
               style={{
                 backgroundColor: activeIndex === index ? "#00d4ff" : "#0f3460",
@@ -87,6 +110,9 @@ const FAQ = () => {
             >
               {faq.question}
             </div>
+
+
+            {/*********************** Answers ***********************/}
             {activeIndex === index && (
               <div
                 style={{
@@ -99,9 +125,9 @@ const FAQ = () => {
                 {faq.answer}
               </div>
             )}
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

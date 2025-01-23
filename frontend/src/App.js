@@ -6,6 +6,7 @@ import Event from './pages/Event';
 import Faq from './pages/Faq';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ACSEShome from './pages/ACSEShome';
 
 function App() {
   return(
@@ -13,6 +14,7 @@ function App() {
     <Navbar/>
 
     <Routes>
+      <Route exact path='/' element={<ACSEShome/>}/>
       <Route exact path='/techventure' element={<Home/>}/>
       <Route exact path='/techventure/about' element={<About/>}/>
       <Route exact path='/techventure/event/:id' element={<Event/>}/>

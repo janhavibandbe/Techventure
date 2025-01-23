@@ -8,6 +8,7 @@
     background-color: #222929;
 }
 
+/*************************** Event Banner ***************************/
 .eventBanner{
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -35,6 +36,10 @@
     justify-content: center;
     color: #d5edee;
     font-family: "Bruno Ace", serif;
+    width: 80%;
+    @media (max-width: 470px) {
+      width: 100%;
+    }
 }
 
 .eventBannerContent .eventDate, .venue{
@@ -74,7 +79,7 @@
 
 
 
-
+/*************************** Countdown ***************************/
 .countdownSection{
     margin-top: -5rem;
     display: flex;
@@ -91,7 +96,7 @@
 
 
 
-
+/*************************** Event Description ***************************/
 .eventDescription{
     display: flex;
     flex-direction: column;
@@ -117,12 +122,9 @@
 }
 
 .eventDescription .eventInfo{
-    /* font-size: 1.5rem;
-    font-weight: 500; */
     color: #d5edee;
     font-family: "Bruno Ace", serif;
     line-height: 2.2rem;
-    /* text-align: center; */
     padding-inline: 8rem;
     @media (max-width: 1024px) {
         font-size: 1.2rem;
@@ -138,6 +140,18 @@
     }
 }
 
+.eventDescription .eventInfo p{
+    font-size: 1.3rem;
+}
+
+.eventDescription .eventInfo p strong{
+    font-size: 1.6rem;
+}
+
+.eventDescription .eventInfo ol{
+    list-style: decimal;
+    font-size: 1.3rem;
+}
 
 
 
@@ -147,6 +161,7 @@
 
 
 
+/*************************** Prices ***************************/
 .prices {
     margin-top: 2rem;
     color: #d5edee;
@@ -225,7 +240,7 @@
 
 
 
-
+/*************************** Register Button ***************************/
 .registerButtonContainer{
     text-align: center;
     padding-block: 3rem;

@@ -19,6 +19,7 @@
     }
 }
 
+/*************************** Header ***************************/
 .gallery .sectionName{
     display: flex;
     justify-content: center;
@@ -38,6 +39,8 @@
     }
 }
 
+
+/*************************** Photos ***************************/
 .cards {
   display: flex;
   flex-wrap: wrap;
