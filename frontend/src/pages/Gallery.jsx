@@ -86,7 +86,6 @@ function Gallery() {
             </motion.div>
           )
         })}
-        
       </motion.div>
 
     </div>
