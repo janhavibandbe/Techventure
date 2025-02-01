@@ -5,11 +5,10 @@ import FlipCard from "../components/FlipCard";
 import { useNavigate } from 'react-router-dom';
 import Countdown from "../components/Countdown";
 
-import Image1 from '../assets/testImg1.jpg';
-import Image2 from '../assets/testImg2.jpg';
-import Image3 from '../assets/testImg3.jpg';
-import Image4 from '../assets/testImg4.jpg';
-
+import quizRelay from '../assets/quizRelay.jpeg';
+import codeHunt from '../assets/codeHunt.jpeg';
+import miniBattle from '../assets/miniBattle.jpeg';
+import futsal from '../assets/futsal.jpeg';
 
 
 function Home() {
@@ -48,58 +47,58 @@ function Home() {
     }
   };
 
-  const eventTime = "2025-02-03T00:00:00";
+  const eventTime = "2025-02-17T09:15:00";
 
   const techEvents = [
     {
       id: 1,
-      image: Image1,
-      name: 'Tech Conference 2024',
-      description: 'Join the most innovative tech conference this year with top speakers from around the world.'
+      image: codeHunt,
+      name: 'Code Hunt',
+      description: 'Code Hunt is coding treasure hunt where teams solve C programming challenges to uncover hidden locations.'
     },
     {
       id: 2,
-      image: Image2,
-      name: 'Music Festival',
-      description: 'A weekend of music, fun, and unforgettable performances from various artists.'
+      image: 'https://media.licdn.com/dms/image/v2/D4D12AQHsGUCYBeE2AA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1697107698641?e=2147483647&v=beta&t=LkKXefH8Oa3reHEyrGiuAF3U7z7WpD6d_ovnjWdTPMI',
+      name: 'Break the Query',
+      description: 'Break the Query is a SQL challenge where participants write efficient queries to solve given problems within 45 minutes.'
     },
     {
       id: 3,
-      image: Image3,
-      name: 'Art Expo 2024',
-      description: 'Explore the world of art at the biggest expo showcasing modern and contemporary art.'
+      image: quizRelay,
+      name: 'Quiz Relay',
+      description: 'Quiz Relay is a four-phase challenge testing general knowledge, problem-solving, math, and logical reasoning skills.'
     },
     {
       id: 4,
-      image: Image4,
-      name: 'Art Expo 2024',
-      description: 'Explore the world of art at the biggest expo showcasing modern and contemporary art.'
+      image: 'https://www.shutterstock.com/image-vector/futuristic-robot-interacting-digital-data-600nw-2500204599.jpg',
+      name: 'Prompt It',
+      description: 'Prompt It! is a competition where participants craft prompts to recreate a pre-written story using ChatGPT.'
+    },
+    {
+      id: 5,
+      image: 'https://engineering.facile.it/images/vp-may-2024/hack-the-box-v0-a56fw7h8a2aa1.webp',
+      name: 'Hack The Box',
+      description: 'Hack the Box is a timed cybersecurity challenge where participants navigate a Linux system to find and execute a hidden file.'
     },
   ];
 
   const nonTechEvents = [
     {
-      id: 5,
-      image: Image1,
-      name: 'Tech Conference 2024',
-      description: 'Join the most innovative tech conference this year with top speakers from around the world.'
-    },
-    {
       id: 6,
-      image: Image2,
-      name: 'Music Festival',
-      description: 'A weekend of music, fun, and unforgettable performances from various artists.'
+      image: futsal,
+      name: 'Futsal',
+      description: 'Futsal is a fast-paced indoor game where two-player teams compete to score the most goals within 10 minutes.'
     },
     {
       id: 7,
-      image: Image3,
-      name: 'Art Expo 2024',
-      description: 'Explore the world of art at the biggest expo showcasing modern and contemporary art.'
+      image: miniBattle,
+      name: 'Mini Battle',
+      description: 'A weekend of music, fun, and unforgettable performances from various artists.'
     },
     {
       id: 8,
-      image: Image4,
-      name: 'Art Expo 2024',
+      image: 'https://static.vecteezy.com/system/resources/previews/000/221/232/non_2x/vector-illustration-of-blast-with-balloon.jpg',
+      name: 'Balloon Blast',
       description: 'Explore the world of art at the biggest expo showcasing modern and contemporary art.'
     },
   ];
@@ -129,7 +128,7 @@ function Home() {
             initial="hidden"
             whileInView="visible"
             >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, sequi.
+            Techventure is where innovation meets celebration
           </motion.div>
 
           <motion.div 
@@ -139,7 +138,7 @@ function Home() {
             whileInView="visible"
             >
             <i className="fa-regular fa-calendar-days"></i>
-            15 Feb 2025
+            17 Feb 2025
           </motion.div>
 
           <motion.div 
@@ -172,10 +171,12 @@ function Home() {
         <div className={HomeStyle.sectionTitle}>Welcome to Techventure</div>
 
         <div className={HomeStyle.homeAboutInfo}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit adipisci harum iusto, earum aspernatur distinctio ipsa beatae saepe 
-          ratione labore blanditiis illo magni repudiandae odio debitis ipsum! Laudantium, rem vel! Lorem ipsum dolor sit amet, consectetur 
-          adipisicing elit. Sit odit, deleniti quis eaque ab facilis hic vitae repellat dolorem illo architecto eveniet quibusdam accusantium 
-          itaque nisi minima laborum. Aperiam, ullam.
+          Welcome to Techventure, the flagship event of the Computer Science
+          and Engineering Department at Finolex Academy of Management and
+          Technology. Organized and managed with passion by the dynamic ACSES
+          committee—a group of aspiring technologists pursuing their
+          undergraduate degrees in Computer Science and Engineering (AI &
+          ML)—Techventure is where innovation meets celebration.
         </div>
 
         <button onClick={goToAbout}>Know more →</button>

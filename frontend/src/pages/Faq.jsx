@@ -20,24 +20,28 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is TechVenture?",
-      answer: "TechVenture is an annual technology festival that showcases innovation, workshops, and competitions in various tech domains.",
+      question: "What is Techventure?",
+      answer: "Techventure is an annual technology festival of Computer Science and Engineering Department(AI & ML) that showcases innovation and competitions in various tech domains.",
     },
     {
-      question: "When and where will TechVenture take place?",
-      answer: "TechVenture 2025 will take place from Feb 18 at the CSE Department.",
+      question: "What is motive behind Techventure?",
+      answer: "The motive behind TechVenture is to provide a platform for students to explore, enhance, and showcase their technical skills. It aims to foster innovation, creativity, and knowledge sharing, while encouraging collaboration and critical thinking.",
     },
     {
-      question: "How can I register for events?",
-      answer: "You can register on our official website by navigating to the 'Register' section and selecting the event of your choice.",
+      question: "How to reach Finolex College?",
+      answer: "If you’re traveling by road, you can take an auto-rickshaw or bus from the Ratnagiri Bus Stand to reach Finolex College. If you're traveling by train, take an auto-rickshaw from the Ratnagiri Railway Station, or go to the Ratnagiri Bus Stand and then take an auto-rickshaw or bus to the college.",
     },
     {
-      question: "Are there any fees to attend TechFest?",
-      answer: "Entry to TechFest is free, but some workshops and competitions may have registration fees.",
+      question: "I am from a different college. Can I still apply for the events?",
+      answer: "Yes, absolutely! You are welcome to apply for the events, regardless of which college you are from.",
     },
     {
-      question: "Who can participate in the competitions?",
-      answer: "Competitions are open to students, professionals, and enthusiasts. Specific eligibility criteria will be listed for each competition.",
+      question: "Are there any consolation prizes for participants?",
+      answer: "There will not be any consolation prizes. However, all participants will receive a certificate of participation.",
+    },
+    {
+      question: "What are the eligibility criteria for participation?",
+      answer: "There are no specific criteria for participation in the event. Anyone can apply.",
     },
   ];
 

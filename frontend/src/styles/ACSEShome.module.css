@@ -12,6 +12,7 @@
   font-family: "Bruno Ace", serif;
   color: #09f4fd;
   text-align: center;
+  padding-block: 3rem;
   @media (max-width: 1024px) {
     font-size: 2.8rem;
   }
@@ -86,10 +87,10 @@
 /*************************** Faculty Members ***************************/
 .faculty{
   padding-block: 2rem;
+  background-color: #121212;
 }
 
 .facultyCards { 
-  padding-block: 2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -138,10 +139,32 @@
 .facultyCardBack {
   background-color: #09f4fd;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
+  word-wrap: break-word;
+  overflow: hidden;
 }
+
+.facultyCardBack h3{
+  font-size: 1.3rem;
+  margin: 5px 0; 
+  white-space: normal;
+  word-break: break-word; 
+}
+
+.facultyCardBack p {
+  font-size: 1rem;
+  margin: 5px 0;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word; 
+  max-width: 90%; 
+} 
 
 @media (max-width: 600px) {
   .facultyCard {
@@ -154,6 +177,86 @@
 
 
 /*************************** Past Event Scetion ***************************/
+.pastEvents {
+  color: #fff;
+  margin-inline: 5rem;
+  margin-bottom: 5rem;
+  font-family: "Bruno Ace", serif;
+}
+
+.eventContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eventOdd, .eventEven {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 1rem;
+  background-color: #121212;
+  box-shadow: 4px 4px 5px #09f4fd;
+  gap: 1rem;
+}
+
+.eventOdd {
+  flex-direction: row-reverse; 
+}
+
+.eventEven {
+  flex-direction: row;
+}
+
+.eventImage {
+  width: 40%;
+  height: 20rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.eventDescription {
+  width: 60%;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b0b0b0;
+}
+
+@media (max-width: 768px) {
+  .eventContainer {
+    flex-direction: column;
+  }
+
+  .eventOdd, .eventEven {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .eventImage {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .eventDescription {
+    width: 95%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .pastEvents{
+    margin-inline: 2rem;
+  }
+  .eventDescription{
+    font-size: 0.8rem;
+  }
+  .eventImage {
+    width: 70%;
+    height: 13rem;
+  }
+}
+
 
 
 /*************************** Upcoming Events Scetion ***************************/
