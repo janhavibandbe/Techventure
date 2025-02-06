@@ -38,7 +38,7 @@
   .time {
     font-size: 3rem;
     font-weight: bold;
-    text-shadow: 0 0 10px #09f4fd, 0 0 20px #09f4fd;
+    text-shadow: 0 0 7px #09f4fd, 0 0 7px #09f4fd;
     @media (max-width: 768px) {
         font-size: 2rem;
     }

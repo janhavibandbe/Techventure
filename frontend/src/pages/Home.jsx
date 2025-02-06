@@ -5,10 +5,10 @@ import FlipCard from "../components/FlipCard";
 import { useNavigate } from 'react-router-dom';
 import Countdown from "../components/Countdown";
 
-import quizRelay from '../assets/quizRelay.jpeg';
-import codeHunt from '../assets/codeHunt.jpeg';
-import miniBattle from '../assets/miniBattle.jpeg';
-import futsal from '../assets/futsal.jpeg';
+import quizRelay from '../assets/quizRelay.jpg';
+import codeHunt from '../assets/codeHunt.jpg';
+import miniBattle from '../assets/miniBattle.jpg';
+import futsal from '../assets/futsal.jpg';
 
 
 function Home() {

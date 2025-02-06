@@ -4,15 +4,14 @@ import { useParams } from 'react-router-dom';
 import Countdown from '../components/Countdown';
 import { motion } from 'framer-motion';
 
-import Image4 from '../assets/testImg4.jpg';
 import GoldenTropthy from '../assets/goldenTrophy.png';
 import SilverTropthy from '../assets/silverTrophy.png';
 import BronzeTropthy from '../assets/bronzeTrophy.png';
 
-import quizRelay from '../assets/quizRelay.jpeg';
-import codeHunt from '../assets/codeHunt.jpeg';
-import miniBattle from '../assets/miniBattle.jpeg';
-import futsal from '../assets/futsal.jpeg';
+import quizRelay from '../assets/quizRelay.jpg';
+import codeHunt from '../assets/codeHunt.jpg';
+import miniBattle from '../assets/miniBattle.jpg';
+import futsal from '../assets/futsal.jpg';
 
 function Event() {
   const fadeIn = {
