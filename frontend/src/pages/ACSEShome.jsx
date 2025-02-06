@@ -3,17 +3,17 @@ import ACSEhomeStyle from '../styles/ACSEShome.module.css';
 import { motion } from 'framer-motion';
 
 import faculty1 from '../assets/NimbalkarMam.jpg';
-import faculty2 from '../assets/dummy.jpg';
+import faculty2 from '../assets/SawantMam.jpeg';
 import faculty3 from '../assets/JadhavSir.jpg';
 import faculty4 from '../assets/TivarekarSir.jpg';
-import faculty5 from '../assets/dummy.jpg';
+import faculty5 from '../assets/ShetyeSir.jpeg';
 import faculty6 from '../assets/ZagadeMam.jpg';
 import faculty7 from '../assets/AthalyeMam.png';
 import faculty8 from '../assets/TeliMam.jpeg';
 import faculty9 from '../assets/HatiskarMam.jpg';
 import faculty10 from '../assets/GoreMam.jpg';
 
-import Techventure2k25 from '../assets/gallery3.JPG'
+import Techventure2k25 from '../assets/background.jpg'
 import Techventure2k24 from '../assets/gallery1.jpg';
 import TeachersDay from '../assets/gallery14.jpg'
 import FreshFlex from '../assets/FreshFlex.jpg';

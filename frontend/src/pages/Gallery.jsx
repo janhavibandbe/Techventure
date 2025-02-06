@@ -33,25 +33,25 @@ function Gallery() {
       id: 1,
       imgSrc: img1,
       imgName: "Image1",
-      imgDescription: "ACSES team group photo",
+      imgDescription: "The ACSES committee group photo captures the members together, showcasing their unity and collaboration.",
     },
     {
       id: 2,
       imgSrc: img2,
       imgName: "Image2",
-      imgDescription: "Techventure 2k24",
+      imgDescription: "TechVenture 2k24 is an exciting event showcasing innovation and technology.",
     },
     {
       id: 3,
       imgSrc: img3,
       imgName: "Image3",
-      imgDescription: "Techventure 2k24",
+      imgDescription: "The HOD is warmly welcoming the Principal to the Techventure event.",
     },
     {
       id: 4,
       imgSrc: img4,
       imgName: "Image4",
-      imgDescription: "Teachers' Day Celebration",
+      imgDescription: "Students and teachers celebrating Teachers' Day with joy and gratitude.",
     },
     {
       id: 5,
@@ -63,7 +63,7 @@ function Gallery() {
       id: 6,
       imgSrc: img6,
       imgName: "Image6",
-      imgDescription: "Beautiful rangoli on the occasion of Khandenavmi",
+      imgDescription: "A beautiful rangoli on the occasion of Khandenavmi.",
     },
     {
       id: 7,

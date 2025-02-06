@@ -6,6 +6,7 @@
     padding: 0;
     width: 100%;
     background-color: #222929;
+    font-family: "Bruno Ace", serif;
 }
 
 /*************************** Event Banner ***************************/
@@ -35,7 +36,7 @@
     align-items: center;
     justify-content: center;
     color: #d5edee;
-    font-family: "Bruno Ace", serif;
+    /* font-family: "Bruno Ace", serif; */
     width: 80%;
     @media (max-width: 470px) {
       width: 100%;
@@ -108,7 +109,7 @@
     font-size: 3rem;
     font-weight: 600;
     color: #09f4fd;
-    font-family: "Bruno Ace", serif;
+    /* font-family: "Bruno Ace", serif; */
     text-align: center;
     @media (max-width: 1024px) {
         font-size: 2.8rem;
@@ -123,7 +124,7 @@
 
 .eventDescription .eventInfo{
     color: #d5edee;
-    font-family: "Bruno Ace", serif;
+    /* font-family: "Bruno Ace", serif; */
     line-height: 2.2rem;
     padding-inline: 8rem;
     @media (max-width: 1024px) {
@@ -136,21 +137,35 @@
     @media (max-width: 550px) {
         font-size: 1rem;
         line-height: 1.7rem;
-        padding-inline: 2.5rem;
+        padding-inline: 2rem;
     }
 }
 
 .eventDescription .eventInfo p{
     font-size: 1.3rem;
+    @media (max-width: 1024px) {
+    font-size: 1.2rem;
+    }
+    @media (max-width: 768px) {
+    padding-inline: 10px;
+    font-size: 1rem;
+    }
+    @media (max-width: 550px) {
+    font-size: 0.8rem;
+    }
 }
 
 .eventDescription .eventInfo p strong{
     font-size: 1.6rem;
-}
-
-.eventDescription .eventInfo ol{
-    list-style: decimal;
-    font-size: 1.3rem;
+    @media (max-width: 1024px) {
+        font-size: 1.4rem;
+    }
+    @media (max-width: 768px) {
+        font-size: 1.3rem;
+    }
+    @media (max-width: 550px) {
+        font-size: 1.1rem;
+    }
 }
 
 
@@ -217,10 +232,16 @@
 }
 
 .pricelabel{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #d5edee;
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
+        font-size: 1.1rem;
+    }
+    @media (max-width: 768px) {
         font-size: 1rem;
+    }
+    @media (max-width: 550px) {
+        font-size: 0.8rem;
     }
 }
 
@@ -231,8 +252,24 @@
     @media (max-width: 900px) {
         font-size: 2rem;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
         font-size: 1.8rem;
+    }
+    @media (max-width: 550px) {
+        font-size: 1.3rem;
+    }
+}
+
+.prices p{
+    font-size: 1.2rem;
+    @media (max-width: 1024px) {
+        font-size: 1.1rem;
+    }
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+    @media (max-width: 550px) {
+        font-size: 0.8rem;
     }
 }
 
@@ -241,12 +278,12 @@
 
 
 /*************************** Register Button ***************************/
-.registerButtonContainer{
+.buttonContainer{
     text-align: center;
     padding-block: 3rem;
 }
 
-.registerButtonContainer button{
+.buttonContainer button{
     text-align: center;
     height: 2.5rem;
     width: 10rem;
@@ -258,6 +295,11 @@
     transition: 0.3s ease-in-out;
 }
 
-.registerButtonContainer button:hover {
+.buttonContainer button a{
+    text-decoration: none;
+    color: black;
+}
+
+.buttonContainer button:hover {
     transform: scale(1.1);
   }

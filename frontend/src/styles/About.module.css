@@ -20,7 +20,7 @@
     animation: fadeIn 2s;
   }
   
-  .aboutUsHeader .title {
+ .title {
     font-size: 3rem;
     font-weight: 600;
     color: #09f4fd;
@@ -55,6 +55,7 @@
       font-size: 1rem;
     }
     @media (max-width: 550px) {
+      font-size: 0.8rem;
     }
   }
   
@@ -101,6 +102,9 @@
     }
     @media (max-width: 768px) {
       font-size: 1rem;
+    }
+    @media (max-width: 550px) {
+      font-size: 0.8rem;
     }
   }
   

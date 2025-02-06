@@ -92,7 +92,7 @@ function About() {
       </div>
 
       <div className={AboutStyle.contactUs}>
-        <div className={AboutStyle.sectionTitle}>Contact Us</div>
+        <div className={AboutStyle.title}>Contact Us</div>
 
         <div className={AboutStyle.contactContainer}>
           <div className={AboutStyle.map}>
