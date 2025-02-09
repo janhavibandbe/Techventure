@@ -8,7 +8,7 @@ import img3 from '../assets/gallery3.JPG';
 import img4 from '../assets/gallery14.jpg';
 import img5 from '../assets/gallery15.jpg';
 import img6 from '../assets/gallery16.jpg';
-import img7 from '../assets/gallery17.jpg';
+import img7 from '../assets/KandenavmiPooja.jpg';
 import img8 from '../assets/gallery18.jpg';
 import img9 from '../assets/FreshFlex.jpg';
 
@@ -45,7 +45,7 @@ function Gallery() {
       id: 3,
       imgSrc: img3,
       imgName: "Image3",
-      imgDescription: "The HOD is warmly welcoming the Principal to the Techventure event.",
+      imgDescription: "The HOD extends a warm welcome to the Principal at the TechVenture event.",
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ function Gallery() {
       id: 5,
       imgSrc: img5,
       imgName: "Image5",
-      imgDescription: "Teachers' Day Celebration",
+      imgDescription: "Group photo of CSE department faculty members on Teachers' Day.",
     },
     {
       id: 6,
@@ -69,7 +69,7 @@ function Gallery() {
       id: 7,
       imgSrc: img7,
       imgName: "Image7",
-      imgDescription: "Khandenavmi pooja",
+      imgDescription: "Aarti performed during Khande Navmi Pooja, seeking blessings for a bright future.",
     },
     {
       id: 8,

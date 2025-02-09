@@ -18,24 +18,20 @@ function About() {
     e.preventDefault();
 
     if(sname==='' || ssubject==='' || semailid==='' || smessage===''){
-      debugger;
       toast.error("Please fill all required fields!", {autoClose: 2000});
       return;
     }
     else{
-      debugger;
-      emailjs.sendForm('service_yo4omcg', 'template_8ai5zws', form.current, {
-        publicKey: 'QQLYGU8R53JTtpyGH',
+      emailjs.sendForm('service_z4z0enc', 'template_lj0bkhy', form.current, {
+        publicKey: 'DxD4cflabYfezODzI',
       })
       .then(() => {
-          debugger;
           toast.success('Email Sent 🙂');
           setTimeout(()=>{
             window.location.reload();
           }, 2000);
         },
         (error) => {
-          debugger;
           toast.error('Something Went Wrong ☹️');
         },
       );
@@ -46,50 +42,63 @@ function About() {
     <div className={AboutStyle.aboutUsPage}>
       <div className={AboutStyle.aboutUsContainer}>
         <div className={AboutStyle.aboutUsHeader}>
-          <div className={AboutStyle.title}>Welcome to Techventure</div>
+          <div className={AboutStyle.title}>About Computer Science & Engineering (AI & ML)</div>
           <p>
-            Welcome to TechVenture, the flagship event of the Computer Science
-            and Engineering Department at Finolex Academy of Management and
-            Technology. Organized and managed with passion by the dynamic ACSES
-            committee—a group of aspiring technologists pursuing their
-            undergraduate degrees in Computer Science and Engineering (AI &
-            ML)—Techventure is where innovation meets celebration.
+            Computer Science & Engineering (CSE) is one of the most sought-after academic programs that integrates the fields of computer 
+            engineering and computer science, providing knowledge of computing systems in both hardware and software design. <br/><br/>
+            Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and 
+            mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning 
+            and problem-solving. <br/><br/>
+            Machine learning (ML) is a form of AI that enables a system to learn from data rather than through explicit programming.  Machine 
+            learning is closely related to computational statistics, which focuses on making predictions using computers. The study of mathematical 
+            optimization delivers methods, theory and application domains to the field of machine learning.
           </p>
         </div>
         <div className={AboutStyle.aboutUsContent}>
           <section>
-            <div className={AboutStyle.sectionTitle}>What Makes Techventure Special?</div>
+            <div className={AboutStyle.sectionTitle}>VISION</div>
             <p>
-              Techventure is a unique blend of technical and non-technical
-              events, ensuring that there’s something exciting for everyone.
+              To provide state of the art Computer Science Engineering and prepare the students for a globalized technological society and orient 
+              them towards serving the society.
             </p>
+          </section>
+
+
+
+          <section>
+            <div className={AboutStyle.sectionTitle}>MISSION</div>
             <ul>
               <li>
-                Technical Events: Engaging activities like quizzes, Code Hunt,
-                and Guess the Output.
+                Lead the advancement of computer science, computer engineering, information technology, and cybersecurity 
+                through internationally recognized research and education, as well as technology transfer.
               </li>
               <li>
-                Non-Technical Events: Interactive and entertaining games for
-                lasting memories.
+                Provide quality learning experiences through effective classroom practices, active learning styles of teaching, and opportunities 
+                for meaningful interactions between students and faculty.
+              </li>
+              <li>
+                To imbibe skills in students to address the need of the industry.
+              </li>
+              <li>
+                To inculcate professional behavior, strong ethical values, innovative research capabilities and leadership abilities.
               </li>
             </ul>
           </section>
-          <section>
-            <div className={AboutStyle.sectionTitle}>Behind the Event</div>
-            <p>
-              The event is brought to life by the relentless efforts of the
-              ACSES committee, comprising talented and dedicated students who
-              work tirelessly to make Techventure an unforgettable experience.
-            </p>
-          </section>
-          <section>
+
+
+
+          {/* <section>
             <div className={AboutStyle.sectionTitle}>Join Us</div>
             <p>
               Let’s create, compete, and celebrate—together at Techventure!
             </p>
-          </section>
+          </section> */}
         </div>
       </div>
+
+
+
+
 
       <div className={AboutStyle.contactUs}>
         <div className={AboutStyle.title}>Contact Us</div>
@@ -101,8 +110,8 @@ function About() {
 
           <form ref={form} onSubmit={sendEmail} className={AboutStyle.email}>
             <input name="name" type="text" placeholder='Name' onChange={(e) => setSname(e.target.value)}/>
-            <input name="Subject" type="text" placeholder='Subject' onChange={(e) => setSsubject(e.target.value)}/>
-            <input name="emailid" type="text" placeholder='Email ID' onChange={(e) => setSemailid(e.target.value)}/>
+            <input name="subject" type="text" placeholder='Subject' onChange={(e) => setSsubject(e.target.value)}/>
+            <input name="emailid" type="text" placeholder='Your Email ID' onChange={(e) => setSemailid(e.target.value)}/>
             <textarea name="message" id="" placeholder='Write here...' onChange={(e) => setSmessage(e.target.value)}></textarea>
             <div className={AboutStyle.sendButton}>
               <button type='submit'>Send</button>
@@ -113,15 +122,15 @@ function About() {
 
         <div className={AboutStyle.phoneNos}>
           <div className={AboutStyle.phone1}>
-           <Link to={`tel:9423290580`} className={AboutStyle.phone}>9423290580 - Prof. V. V. Nimbalkar (HOD of CSE(AI & ML))</Link>
+           <Link to={`tel:9423290580`} className={AboutStyle.phone}>Head of the Department (9423290580)</Link>
           </div>
 
           <div className={AboutStyle.phone2}>
-           <Link to={`tel:9075781856`} className={AboutStyle.phone}>9075781856 - Prof. A. N. Shetye (Coordinator ) </Link>
+           <Link to={`tel:9075781856`} className={AboutStyle.phone}>Faculty Incharge (9075781856)</Link>
           </div>
 
           <div className={AboutStyle.phone3}>
-            <Link to={`tel:9075781856`} className={AboutStyle.phone}>9362822828 - Giriprasath K (Coordinator CSE(AI & ML))</Link>
+            <Link to={`tel:9075781856`} className={AboutStyle.phone}>Coordinator (9362822828)</Link>
           </div>
         </div>
 

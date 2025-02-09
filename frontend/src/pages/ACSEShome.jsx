@@ -17,6 +17,7 @@ import Techventure2k25 from '../assets/background.jpg'
 import Techventure2k24 from '../assets/gallery1.jpg';
 import TeachersDay from '../assets/gallery14.jpg'
 import FreshFlex from '../assets/FreshFlex.jpg';
+import KandenavmiPooja from '../assets/KandenavmiPooja.jpg'
 
 function ACSEShome() {
   const fadeUp = {
@@ -130,6 +131,12 @@ const pastEvents = [
     name: "FreshFlex 2k24",
     description: "FreshFlex, the Fresher’s Party at the CSE(AI & ML) Department of Finolex Academy of Management and Technology, was an exciting and memorable event! The celebration was filled with energetic performances, music, and fun activities, creating a lively atmosphere for the new students. Freshers had a great time bonding with seniors and getting to know more about college life. It was a fantastic way to kick off their journey at Finolex College.", 
     imageUrl: FreshFlex
+  },
+  { 
+    id: 4, 
+    name: "Khandenavmi Pooja",
+    description: "Khandenavmi Pooja was celebrated with devotion at the CSE Department of Finolex Academy of Management and Technology. The event began with traditional rituals, invoking blessings for knowledge and success. Faculty, students, and staff participated in the sacred ceremony, creating a spiritual atmosphere. The pooja included Vedic chants, followed by aarti, fostering unity. The beautifully decorated department enhanced the festive spirit. Students embraced cultural traditions and sought divine guidance for their academic journey. The event concluded with positivity, gratitude, and blessings for future success, making it a memorable and meaningful celebration.", 
+    imageUrl: KandenavmiPooja
   },
 ];
 

@@ -28,10 +28,6 @@ const FAQ = () => {
       answer: "The motive behind TechVenture is to provide a platform for students to explore, enhance, and showcase their technical skills. It aims to foster innovation, creativity, and knowledge sharing, while encouraging collaboration and critical thinking.",
     },
     {
-      question: "How to reach Finolex College?",
-      answer: "If you’re traveling by road, you can take an auto-rickshaw or bus from the Ratnagiri Bus Stand to reach Finolex College. If you're traveling by train, take an auto-rickshaw from the Ratnagiri Railway Station, or go to the Ratnagiri Bus Stand and then take an auto-rickshaw or bus to the college.",
-    },
-    {
       question: "I am from a different college. Can I still apply for the events?",
       answer: "Yes, absolutely! You are welcome to apply for the events, regardless of which college you are from.",
     },

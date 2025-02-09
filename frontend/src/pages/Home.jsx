@@ -93,13 +93,13 @@ function Home() {
       id: 7,
       image: miniBattle,
       name: 'Mini Battle',
-      description: 'A weekend of music, fun, and unforgettable performances from various artists.'
+      description: 'Mini Battles is a solo challenge where players race to complete five mini-games in the shortest time.'
     },
     {
       id: 8,
       image: 'https://static.vecteezy.com/system/resources/previews/000/221/232/non_2x/vector-illustration-of-blast-with-balloon.jpg',
       name: 'Balloon Blast',
-      description: 'Explore the world of art at the biggest expo showcasing modern and contemporary art.'
+      description: "Balloon Blast is a fast-paced game where players compete to burst opponents' balloons while protecting their own."
     },
   ];
 
@@ -179,7 +179,7 @@ function Home() {
           ML)—Techventure is where innovation meets celebration.
         </div>
 
-        <button onClick={goToAbout}>Know more →</button>
+        <button onClick={goToAbout}>Department Info →</button>
       </motion.div>
       
 

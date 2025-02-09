@@ -153,9 +153,9 @@ function Event() {
           name: 'Mini Battle',
           date: '18 Feb 2025',
           eventTime : "2025-02-18T00:00:00",
-          description: `<p><span><strong>About:</strong></span>&emsp;</p>
+          description: `<p><span><strong>About:</strong></span>&emsp;Mini Battles is a fun and exciting challenge where participants compete in a series of quick skill-based games to test their coordination and precision. The event consists of five engaging mini-games: First, players must build a stable pyramid of cups. In the second game, they must attempt to throw ping pong balls into cups with accuracy. The third challenge requires successfully flipping a bottle three times. In the fourth game, participants must swiftly pull a cloth off a table without disturbing the objects on it. Finally, in the last game, players roll dice until they land on the same number. Each game is designed to be competitive and engaging, with the fastest and most skillful participant emerging as the ultimate winner.</p>
                         <p><span><strong>Team Members:</strong></span>&emsp;Solo</p>
-                        <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></p>`,
+                        <p><strong> Get ready to showcase your reflexes and strategy in these thrilling mini challenges!</strong></p>`,
           location: 'EN 1/3',
           googleFormURL: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         },
@@ -166,9 +166,9 @@ function Event() {
           name: 'Balloon Blast',
           date: '17 Feb 2025',
           eventTime : "2025-02-17T00:00:00",
-          description: `<p><span><strong>About:</strong></span>&emsp;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis!</p>
+          description: `<p><span><strong>About:</strong></span>&emsp;Balloon Blast is an exciting and fast-paced game where participants compete to be the last one standing. Each player will have balloons tied to their legs, and a random group of five participants will be selected for each round. The objective is to burst the balloons of opponents while protecting your own. Players must move quickly, strategize, and outmaneuver their competitors to survive. The game continues until only one player remains with an unburst balloon, who will be declared the winner.</p>
                         <p><span><strong>Team Members:</strong></span>&emsp;5</p>
-                        <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></p>`,
+                        <p><strong>Get ready for a thrilling battle of speed, agility, and strategy in Balloon Blast!</strong></p>`,
           location: 'EN 1/3',
           googleFormURL: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         },
@@ -247,27 +247,27 @@ function Event() {
 
 
 
-      {/*********************** Prices ***********************/}
+      {/*********************** Prizes ***********************/}
       {
         event.category === 'tech' ? 
         (
           <div className={EventStyle.prices}>
-            <div className={EventStyle.sectionTitle}>Prices</div>
+            <div className={EventStyle.sectionTitle}>Prizes</div>
 
             <div className={EventStyle.priceOptions}>
               <div className={EventStyle.priceOption}>
                 <img src={SilverTropthy} alt="" />
-                <div className={EventStyle.pricelabel}>2nd Price</div>
+                <div className={EventStyle.pricelabel}>2nd Prize</div>
                 <div className={EventStyle.priceValue}>{event.price2}</div>
               </div>
               <div className={EventStyle.priceOption}>
                 <img src={GoldenTropthy} alt="" className={EventStyle.firstPrice}/>
-                <div className={EventStyle.pricelabel}>1st Price</div>
+                <div className={EventStyle.pricelabel}>1st Prize</div>
                 <div className={EventStyle.priceValue}>{event.price1}</div>
               </div>
               <div className={EventStyle.priceOption}>
                 <img src={BronzeTropthy} alt="" />
-                <div className={EventStyle.pricelabel}>3rd Price</div>
+                <div className={EventStyle.pricelabel}>3rd Prize</div>
                 <div className={EventStyle.priceValue}>{event.price3}</div>
               </div>
             </div>
