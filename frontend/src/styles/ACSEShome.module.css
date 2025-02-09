@@ -223,6 +223,10 @@
   color: #b0b0b0;
 }
 
+.eventDescription h1{
+  font-size: 2rem;
+}
+
 @media (max-width: 768px) {
   .eventContainer {
     flex-direction: column;

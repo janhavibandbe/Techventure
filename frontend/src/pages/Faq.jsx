@@ -20,11 +20,11 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is Techventure?",
-      answer: "Techventure is an annual technology festival of Computer Science and Engineering Department(AI & ML) that showcases innovation and competitions in various tech domains.",
+      question: "What is TechVenture?",
+      answer: "TechVenture is an annual technology festival of Computer Science and Engineering Department(AI & ML) that showcases innovation and competitions in various tech domains.",
     },
     {
-      question: "What is motive behind Techventure?",
+      question: "What is motive behind TechVenture?",
       answer: "The motive behind TechVenture is to provide a platform for students to explore, enhance, and showcase their technical skills. It aims to foster innovation, creativity, and knowledge sharing, while encouraging collaboration and critical thinking.",
     },
     {

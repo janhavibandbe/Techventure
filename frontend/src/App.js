@@ -10,6 +10,7 @@ import Faq from './pages/Faq';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ACSEShome from './pages/ACSEShome';
+import NotFound from './components/NotFound';
 
 function App() {
   return(
@@ -23,6 +24,7 @@ function App() {
       <Route exact path='/techventure/event/:id' element={<Event/>}/>
       <Route exact path='/techventure/gallery' element={<Gallery/>}/>
       <Route exact path='/techventure/faq' element={<Faq />} /> 
+      <Route exact path='*' element={<NotFound/>}/>
     </Routes>
 
     <Footer/>

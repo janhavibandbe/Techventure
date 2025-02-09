@@ -1,6 +1,7 @@
 import React from 'react';
 import ACSEhomeStyle from '../styles/ACSEShome.module.css';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 import faculty1 from '../assets/NimbalkarMam.jpg';
 import faculty2 from '../assets/SawantMam.jpeg';
@@ -116,7 +117,7 @@ function ACSEShome() {
 const pastEvents = [
   { 
     id: 1, 
-    name: "Techventure 2k24",
+    name: "TechVenture 2k24",
     description: "TechVenture 2K24, organized by the CSE(AI & ML) Department at Finolex Academy of Management and Technology, Ratnagiri, celebrated technology and innovation. The event brought together students and tech enthusiasts to enhance technical skills. It showcased groundbreaking ideas and innovations, making it a memorable experience for all. TechVenture 2K24 truly embodied the spirit of technological excellence and teamwork.", 
     imageUrl: Techventure2k24
   },
@@ -143,7 +144,7 @@ const pastEvents = [
 const upcomingEvents = [
   {
     id: 1,
-    name: "Techventure 2k25",
+    name: "TechVenture 2k25",
     date: "17 Feb 2025",
     location: "CSE Department",
     image: Techventure2k25,
@@ -157,7 +158,10 @@ const upcomingEvents = [
   },
 ];
 
-
+const navigate = useNavigate();
+const goToTechventure = () =>{
+  navigate('/techventure');
+};
   
 
 return (
@@ -253,7 +257,7 @@ return (
               className={ACSEhomeStyle.upcomingEventfacultyCard}
               style={{ backgroundImage: `url(${upcomingEvent.image})` }}
           >
-            <div className={ACSEhomeStyle.upcomingEventInfo}>
+            <div className={ACSEhomeStyle.upcomingEventInfo} onClick={goToTechventure}>
                 <p className={ACSEhomeStyle.upcomingEventName}>{upcomingEvent.name}</p>
                 <p className={ACSEhomeStyle.upcomingEventDate}>Date: {upcomingEvent.date}</p>
                 <p className={ACSEhomeStyle.upcomingEventLocation}>Location: {upcomingEvent.location}</p>

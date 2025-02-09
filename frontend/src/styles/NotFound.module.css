@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+.container {
+height: 100vh;
+padding-top: 5rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: #171a1a;
+font-family: "Bruno Ace", serif;
+}
+  
+img{
+height: 20rem;
+@media(max-width: 550px){
+    height: 15rem;
+}
+}
+
+h1 {
+font-size: 3rem;
+color: #09f5fd;
+}
+
+p {
+color: #09f5fd;
+font-size: 1.2rem;
+margin: 10px 0;
+}
+
+.backButton {
+margin-block: 3rem;
+border: 2px solid #09f5fd;
+color: #09f5fd;
+padding: 10px 20px;
+font-size: 1rem;
+cursor: pointer;
+border-radius: 5px;
+transition: all 0.3s ease-in-out;
+text-decoration: none;
+}
+
+.backButton:hover {
+background: #09f5fd;
+color: #171a1a;
+}

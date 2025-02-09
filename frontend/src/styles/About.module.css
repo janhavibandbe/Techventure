@@ -2,7 +2,6 @@
 
 .aboutUsPage {
     padding-block: 6rem;
-    /* padding-inline: 2rem; */
     background: linear-gradient(#1d1e1d9f, #1d1e1d9f), url("../assets/binaryRain.jpg");
     background-size: cover;
     background-position: center;
@@ -40,8 +39,6 @@
     font-size: 1.3em;
     line-height: 2;
     color: #b3b3b3;
-    /* max-width: 1300px; */
-    /* margin: 0 auto; */
     margin-inline: 4rem;
     background-color: rgba(20, 20, 20, 0.85);
     padding: 30px;
@@ -64,8 +61,6 @@
   }
   
   .aboutUsContent {
-    /* max-width: 1300px; */
-    /* margin: 0 auto; */
     margin-inline: 4rem;
     background-color: rgba(20, 20, 20, 0.85);
     padding: 30px;

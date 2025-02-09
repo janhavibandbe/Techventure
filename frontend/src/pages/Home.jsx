@@ -128,7 +128,7 @@ function Home() {
             initial="hidden"
             whileInView="visible"
             >
-            Techventure is where innovation meets celebration
+            TechVenture is where innovation meets celebration
           </motion.div>
 
           <motion.div 
@@ -168,15 +168,15 @@ function Home() {
       initial="hidden"
       whileInView="visible"
       >
-        <div className={HomeStyle.sectionTitle}>Welcome to Techventure</div>
+        <div className={HomeStyle.sectionTitle}>Welcome to TechVenture</div>
 
         <div className={HomeStyle.homeAboutInfo}>
-          Welcome to Techventure, the flagship event of the Computer Science
+          Welcome to TechVenture, the flagship event of the Computer Science
           and Engineering Department at Finolex Academy of Management and
           Technology. Organized and managed with passion by the dynamic ACSES
           committee—a group of aspiring technologists pursuing their
           undergraduate degrees in Computer Science and Engineering (AI &
-          ML)—Techventure is where innovation meets celebration.
+          ML)—TechVenture is where innovation meets celebration.
         </div>
 
         <button onClick={goToAbout}>Department Info →</button>
