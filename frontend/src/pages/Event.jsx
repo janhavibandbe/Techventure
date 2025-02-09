@@ -65,8 +65,7 @@ function Event() {
           location: 'EN 1/3',
           price1: '₹600',
           price2: '₹400',
-          price3: '₹200',
-          googleFormURL: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          price3: '₹200'
         },
         {
           id: 2,
@@ -81,8 +80,7 @@ function Event() {
           location: 'EN 1/3',
           price1: '₹500',
           price2: '₹300',
-          price3: '₹200',
-          googleFormURL: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          price3: '₹200'
         },
         {
           id: 3,
@@ -97,8 +95,7 @@ function Event() {
           location: 'EN 1/5',
           price1: '₹400',
           price2: '₹250',
-          price3: '₹150',
-          googleFormURL: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          price3: '₹150'
         },
         {
           id: 4,
@@ -113,8 +110,7 @@ function Event() {
           location: 'EN 1/3',
           price1: '₹400',
           price2: '₹250',
-          price3: '₹150',
-          googleFormURL: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          price3: '₹150'
         },
         {
           id: 5,
@@ -129,8 +125,7 @@ function Event() {
           location: 'EN 1/3',
           price1: '₹500',
           price2: '₹300',
-          price3: '₹200',
-          googleFormURL: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          price3: '₹200'
         },
         {
           id: 6,
@@ -143,8 +138,7 @@ function Event() {
                         <p><span><strong>Team Members:</strong></span>&emsp;2</p>
                         <p><span><strong>Entry Fees:</strong></span>&emsp;20/- per team</p>
                         <p><strong>Get ready to showcase your agility and teamwork on the court!</strong></p>`,
-          location: 'EN 1/1',
-          googleFormURL: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          location: 'EN 1/1'
         },
         {
           id: 7,
@@ -156,8 +150,7 @@ function Event() {
           description: `<p><span><strong>About:</strong></span>&emsp;Mini Battles is a fun and exciting challenge where participants compete in a series of quick skill-based games to test their coordination and precision. The event consists of five engaging mini-games: First, players must build a stable pyramid of cups. In the second game, they must attempt to throw ping pong balls into cups with accuracy. The third challenge requires successfully flipping a bottle three times. In the fourth game, participants must swiftly pull a cloth off a table without disturbing the objects on it. Finally, in the last game, players roll dice until they land on the same number. Each game is designed to be competitive and engaging, with the fastest and most skillful participant emerging as the ultimate winner.</p>
                         <p><span><strong>Team Members:</strong></span>&emsp;Solo</p>
                         <p><strong> Get ready to showcase your reflexes and strategy in these thrilling mini challenges!</strong></p>`,
-          location: 'EN 1/3',
-          googleFormURL: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          location: 'EN 1/3'
         },
         {
           id: 8,
@@ -169,18 +162,13 @@ function Event() {
           description: `<p><span><strong>About:</strong></span>&emsp;Balloon Blast is an exciting and fast-paced game where participants compete to be the last one standing. Each player will have balloons tied to their legs, and a random group of five participants will be selected for each round. The objective is to burst the balloons of opponents while protecting your own. Players must move quickly, strategize, and outmaneuver their competitors to survive. The game continues until only one player remains with an unburst balloon, who will be declared the winner.</p>
                         <p><span><strong>Team Members:</strong></span>&emsp;5</p>
                         <p><strong>Get ready for a thrilling battle of speed, agility, and strategy in Balloon Blast!</strong></p>`,
-          location: 'EN 1/3',
-          googleFormURL: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          location: 'EN 1/3'
         },
       ];
 
 
   const {id} = useParams();
   const event = events.find(e => e.id === parseInt(id));
-
-  const handleRgistration = () =>{
-    window.open(event.googleFormURL, "_blank");
-  };
 
   return (
     <div className={EventStyle.eventPage}>
@@ -211,7 +199,9 @@ function Event() {
           variants={fadeIn}
           initial="hidden"
           whileInView="visible">
-          <button onClick={handleRgistration}>Rgister Now →</button>
+            <a href="https://linktr.ee/qr/1bd112c4-f4f2-4e3a-85a1-169f8b050d0c?utm_source=qr_code" target="_blank" rel="noopener noreferrer">
+              <button >Rgister Now →</button>
+            </a>
         </motion.div>
       </div>
 
@@ -240,7 +230,7 @@ function Event() {
       {/*********************** Event Description ***********************/}
       <div className={EventStyle.buttonContainer}>
         <button >
-          <a href="https://drive.google.com/file/d/1i4GTljkZozmOZqoZr2AaQ1GDsoeBnhdc/view?usp=sharing" download>Rule Book </a>
+          <a href="https://drive.google.com/file/d/1i4GTljkZozmOZqoZr2AaQ1GDsoeBnhdc/view?usp=sharing" download target="_blank" rel="noopener noreferrer">Rule Book </a>
           <i class="fa-solid fa-download"></i>
         </button>
       </div>
@@ -281,7 +271,9 @@ function Event() {
 
       {/*********************** Register Button ***********************/}
       <div className={EventStyle.buttonContainer}>
-        <button onClick={handleRgistration}>Rgister Now →</button>
+        <a href="https://linktr.ee/qr/1bd112c4-f4f2-4e3a-85a1-169f8b050d0c?utm_source=qr_code" target="_blank" rel="noopener noreferrer">
+          <button >Rgister Now →</button>
+        </a>
       </div>
     </div>
 

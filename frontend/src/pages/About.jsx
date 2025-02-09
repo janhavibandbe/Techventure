@@ -4,7 +4,6 @@ import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 
-
 import AboutStyle from '../styles/About.module.css';
 
 function About() {
@@ -22,8 +21,8 @@ function About() {
       return;
     }
     else{
-      emailjs.sendForm('service_z4z0enc', 'template_lj0bkhy', form.current, {
-        publicKey: 'DxD4cflabYfezODzI',
+      emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, {
+        publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
       })
       .then(() => {
           toast.success('Email Sent 🙂');
@@ -41,6 +40,8 @@ function About() {
   return (
     <div className={AboutStyle.aboutUsPage}>
       <div className={AboutStyle.aboutUsContainer}>
+
+        {/*********************** About Department ***********************/}
         <div className={AboutStyle.aboutUsHeader}>
           <div className={AboutStyle.title}>About Computer Science & Engineering (AI & ML)</div>
           <p>
@@ -55,8 +56,10 @@ function About() {
           </p>
         </div>
         <div className={AboutStyle.aboutUsContent}>
+
+        {/*********************** Vision ***********************/}
           <section>
-            <div className={AboutStyle.sectionTitle}>VISION</div>
+            <div className={AboutStyle.sectionTitle}>Vision</div>
             <p>
               To provide state of the art Computer Science Engineering and prepare the students for a globalized technological society and orient 
               them towards serving the society.
@@ -64,9 +67,9 @@ function About() {
           </section>
 
 
-
+          {/*********************** Mission ***********************/}
           <section>
-            <div className={AboutStyle.sectionTitle}>MISSION</div>
+            <div className={AboutStyle.sectionTitle}>Mission</div>
             <ul>
               <li>
                 Lead the advancement of computer science, computer engineering, information technology, and cybersecurity 
@@ -84,30 +87,25 @@ function About() {
               </li>
             </ul>
           </section>
-
-
-
-          {/* <section>
-            <div className={AboutStyle.sectionTitle}>Join Us</div>
-            <p>
-              Let’s create, compete, and celebrate—together at Techventure!
-            </p>
-          </section> */}
+          
         </div>
       </div>
 
 
 
 
-
+      {/*********************** Contact ***********************/}
       <div className={AboutStyle.contactUs}>
         <div className={AboutStyle.title}>Contact Us</div>
-
         <div className={AboutStyle.contactContainer}>
+
+          {/*********************** Map ***********************/}
           <div className={AboutStyle.map}>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.597056662537!2d73.3337650746191!3d17.01170041352034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bea0cf7395a491f%3A0x9fb0040484638864!2sFinolex%20Academy%20of%20Management%20and%20Technology!5e1!3m2!1sen!2sin!4v1738421936743!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
+
+          {/*********************** Conatct Form ***********************/}
           <form ref={form} onSubmit={sendEmail} className={AboutStyle.email}>
             <input name="name" type="text" placeholder='Name' onChange={(e) => setSname(e.target.value)}/>
             <input name="subject" type="text" placeholder='Subject' onChange={(e) => setSsubject(e.target.value)}/>
@@ -120,17 +118,19 @@ function About() {
         </div>
 
 
+
+        {/*********************** Contact Numbers ***********************/}
         <div className={AboutStyle.phoneNos}>
           <div className={AboutStyle.phone1}>
-           <Link to={`tel:9423290580`} className={AboutStyle.phone}>Head of the Department (9423290580)</Link>
+           <Link to={`tel:${process.env.REACT_APP_HOD_PHONE}`} className={AboutStyle.phone}>Head of the Department (9423290580)</Link>
           </div>
 
           <div className={AboutStyle.phone2}>
-           <Link to={`tel:9075781856`} className={AboutStyle.phone}>Faculty Incharge (9075781856)</Link>
+           <Link to={`tel:${process.env.REACT_APP_FACULTY_INCHARGE_PHONE}`} className={AboutStyle.phone}>Faculty Incharge (9075781856)</Link>
           </div>
 
           <div className={AboutStyle.phone3}>
-            <Link to={`tel:9075781856`} className={AboutStyle.phone}>Coordinator (9362822828)</Link>
+            <Link to={`tel:${process.env.REACT_APP_COORDINATOR_PHONE}`} className={AboutStyle.phone}>Coordinator (9362822828)</Link>
           </div>
         </div>
 
