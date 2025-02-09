@@ -225,6 +225,7 @@
 
 .eventDescription h1{
   font-size: 2rem;
+  color: #09f4fd;
 }
 
 @media (max-width: 768px) {

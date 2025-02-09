@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
 
-.container {
+.notFoundContainer {
 height: 100vh;
 padding-top: 5rem;
 display: flex;
@@ -12,19 +12,19 @@ background-color: #171a1a;
 font-family: "Bruno Ace", serif;
 }
   
-img{
+.notFoundContainer img{
 height: 20rem;
 @media(max-width: 550px){
     height: 15rem;
 }
 }
 
-h1 {
+.notFoundContainer h1 {
 font-size: 3rem;
 color: #09f5fd;
 }
 
-p {
+.notFoundContainer p {
 color: #09f5fd;
 font-size: 1.2rem;
 margin: 10px 0;

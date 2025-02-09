@@ -55,6 +55,8 @@ function About() {
             optimization delivers methods, theory and application domains to the field of machine learning.
           </p>
         </div>
+
+        
         <div className={AboutStyle.aboutUsContent}>
 
         {/*********************** Vision ***********************/}

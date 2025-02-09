@@ -48,7 +48,7 @@ function Navbar() {
         </div>
 
         <div className={`${NavStyles.navOptions} ${isMenuOpen ? NavStyles.open : NavStyles.closed}`}>
-          <div className={NavStyles.techventure} onClick={goToTechventure}>Techventure</div>
+          <div className={NavStyles.techventure} onClick={goToTechventure}>TechVenture</div>
           <div className={NavStyles.about} onClick={goToAbout}>About</div>
           <div className={NavStyles.gallery} onClick={gotToGallery}>Gallery</div>
           <div className={NavStyles.faq} onClick={gotToFAQ}>FAQs</div>
